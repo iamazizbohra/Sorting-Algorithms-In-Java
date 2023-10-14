@@ -3,5 +3,6 @@ package sort;
 public enum SortingAlgorithms {
     BUBBLE_SORT,
     SELECTION_SORT,
-    INSERTION_SORT
+    INSERTION_SORT,
+    CYCLE_SORT
 }
