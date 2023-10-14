@@ -2,6 +2,8 @@ package sort.cycle;
 
 public class CycleSort {
     public static void sort(int[] arr) {
+        System.out.println("Sorting Elements Using Cycle Sort");
+
         int n = arr.length;
 
         // loop to start a cycle from each element
@@ -19,7 +21,7 @@ public class CycleSort {
             if (pos == cs)
                 continue;
 
-            // ignore duplicates
+            // ignore duplicates to avoid infinite cycles
             while (item == arr[pos])
                 pos++;
 
@@ -39,7 +41,7 @@ public class CycleSort {
                         pos++;
                 }
 
-                // ignore duplicates
+                // ignore duplicates to avoid infinite cycles
                 while (item == arr[pos])
                     pos++;
 

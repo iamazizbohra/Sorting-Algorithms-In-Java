@@ -2,6 +2,8 @@ package sort.insertion;
 
 public class InsertionSort {
     public static void sort(int[] arr) {
+        System.out.println("Sorting Elements Using Insertion Sort");
+
         int n = arr.length;
 
         // loop to select each element

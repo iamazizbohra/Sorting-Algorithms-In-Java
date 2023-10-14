@@ -2,6 +2,8 @@ package sort.bubble;
 
 public class BubbleSort {
     public static void sort(int[] arr) {
+        System.out.println("Sorting Elements Using Bubble Sort");
+
         int n = arr.length;
 
         // loop for n-1 passes

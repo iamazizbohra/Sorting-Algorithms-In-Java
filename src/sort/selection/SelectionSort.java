@@ -2,6 +2,8 @@ package sort.selection;
 
 public class SelectionSort {
     public static void sort(int[] arr) {
+        System.out.println("Sorting Elements Using Selection Sort");
+
         int n = arr.length;
 
         // loop for (n-1) passes
