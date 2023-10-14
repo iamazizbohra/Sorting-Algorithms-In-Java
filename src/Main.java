@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = {5, 3, 4, 2, 1};
 
-        SortingService.sort(arr, SortingAlgorithms.CYCLE_SORT);
+        SortingService.sort(arr, SortingAlgorithms.COUNTING_SORT);
 
         System.out.println(Arrays.toString(arr));
     }

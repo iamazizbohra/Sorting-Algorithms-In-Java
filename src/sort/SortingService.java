@@ -1,6 +1,7 @@
 package sort;
 
 import sort.bubble.BubbleSort;
+import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
 import sort.insertion.InsertionSort;
 import sort.selection.SelectionSort;
@@ -23,6 +24,9 @@ public class SortingService {
                 break;
             case CYCLE_SORT:
                 CycleSort.sort(arr);
+                break;
+            case COUNTING_SORT:
+                CountingSort.sort(arr);
                 break;
         }
     }
