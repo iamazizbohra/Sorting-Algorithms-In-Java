@@ -11,11 +11,11 @@
 ### Time Complexity
 
 ---
-1. Worst Case Complexity: O(n<sup>2</sup>)
+1. **Worst Case Complexity: O(n<sup>2</sup>)**
 If we want to sort in ascending order and the array is in descending order then, the worst case occurs.
-2. Best Case Complexity: O(n<sup>2</sup>)
+2. **Best Case Complexity: O(n<sup>2</sup>)**
 It occurs when the array is already sorted
-3. Average Case Complexity: O(n<sup>2</sup>)
+3. **Average Case Complexity: O(n<sup>2</sup>)**
 It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
 
 

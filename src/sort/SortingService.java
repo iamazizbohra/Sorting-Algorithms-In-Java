@@ -1,6 +1,7 @@
 package sort;
 
 import sort.bubble.BubbleSort;
+import sort.insertion.InsertionSort;
 import sort.selection.SelectionSort;
 
 public class SortingService {
@@ -15,6 +16,9 @@ public class SortingService {
                 break;
             case SELECTION_SORT:
                 SelectionSort.sort(arr);
+                break;
+            case INSERTION_SORT:
+                InsertionSort.sort(arr);
                 break;
         }
     }
