@@ -1,6 +1,13 @@
 # Selection Sort
 *Select the minimum element and move it to its correct place in every pass*
 
+### How It Works:
+![Selection Sort](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+* Red is current min. 
+* Yellow is sorted list. 
+* Blue is current item.
+
+
 ### Time Complexity
 
 ---

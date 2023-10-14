@@ -1,6 +1,11 @@
 # Bubble Sort
 *Largest element will be bubbled to the last in every pass*
 
+### How It Works:
+![Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+
+Starting from the beginning of the list, compare the next pair. Swap their positions if they are not in the right order (the second one in the pair is smaller than the first one in the pair). After each iteration, one less element (the last one) is needed to be compared until there are no more elements left to be compared.
+
 ### Time Complexity
 
 ---
