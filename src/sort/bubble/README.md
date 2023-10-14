@@ -1,11 +1,12 @@
 # Bubble Sort
+*Largest element will be bubbled to the last in every pass*
 
 ### Time Complexity
 
 ---
-1. Worst Case : O(n<sup>2</sup>). The worst case occurs when we want to sort a list in ascending order, but it is arranged in descending order.
-2. Best Case : O(n). The average case is when the list is arranged in a jumbled order.
-3. Average Case : O(n). The best case occurs when the list is already arranged in the desired order.
+1. Worst Case: O(n<sup>2</sup>). The worst case occurs when we want to sort a list in ascending order, but it is arranged in descending order.
+2. Best Case: O(n). The average case is when the list is arranged in a jumbled order.
+3. Average Case: O(n). The best case occurs when the list is already arranged in the desired order.
 
 ### Space Complexity
 
