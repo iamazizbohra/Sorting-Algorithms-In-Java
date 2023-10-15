@@ -1,6 +1,7 @@
 package sort;
 
 import sort.bubble.BubbleSort;
+import sort.bucket.BucketSort;
 import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
 import sort.insertion.InsertionSort;
@@ -31,6 +32,9 @@ public class SortingService {
                 break;
             case RADIX_SORT:
                 RadixSort.sort(arr);
+                break;
+            case BUCKET_SORT:
+                BucketSort.sort(arr);
                 break;
         }
     }

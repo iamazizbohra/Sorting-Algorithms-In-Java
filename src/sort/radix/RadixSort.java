@@ -2,6 +2,8 @@ package sort.radix;
 
 public class RadixSort {
     public static void sort(int[] arr) {
+        System.out.println("Sorting Elements Using Radix Sort");
+
         int n = arr.length;
 
         // find max element in the array
