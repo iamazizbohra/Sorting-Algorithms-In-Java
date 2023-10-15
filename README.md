@@ -5,3 +5,4 @@
 3. Insertion Sort
 4. Cycle Sort
 5. Counting Sort
+6. Radix Sort

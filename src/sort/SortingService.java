@@ -4,6 +4,7 @@ import sort.bubble.BubbleSort;
 import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
 import sort.insertion.InsertionSort;
+import sort.radix.RadixSort;
 import sort.selection.SelectionSort;
 
 public class SortingService {
@@ -27,6 +28,9 @@ public class SortingService {
                 break;
             case COUNTING_SORT:
                 CountingSort.sort(arr);
+                break;
+            case RADIX_SORT:
+                RadixSort.sort(arr);
                 break;
         }
     }

@@ -5,5 +5,6 @@ public enum SortingAlgorithms {
     SELECTION_SORT,
     INSERTION_SORT,
     CYCLE_SORT,
-    COUNTING_SORT
+    COUNTING_SORT,
+    RADIX_SORT
 }

@@ -14,28 +14,28 @@ public class CountingSort {
         }
 
         // create new count array of size k
-        int[] countArr = new int[k + 1];
+        int[] count = new int[k + 1];
 
         // count frequency of each element
         for (int i = 0; i < n; i++) {
             int e = arr[i];
-            countArr[e]++;
+            count[e]++;
         }
 
         // count prefix sum of frequency array
         for (int i = 1; i <= k; i++) {
-            countArr[i] = countArr[i - 1] + countArr[i];
+            count[i] = count[i - 1] + count[i];
         }
 
         // put element to its correct place
         int[] output = new int[n];
         for (int i = (n - 1); i >= 0; i--) {
             int e = arr[i];
-            int index = --countArr[e];
+            int index = --count[e];
             output[index] = e;
         }
 
-        // copy output array to original array
+        // copy output array back to original array
         for (int i = 0; i < n; i++)
             arr[i] = output[i];
     }

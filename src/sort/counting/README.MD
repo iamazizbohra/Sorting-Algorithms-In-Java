@@ -1,6 +1,6 @@
 # Counting Sort
 
-*Sort elements based on the frequency of its appearance*
+*Sort elements by counting the frequency of their appearance*
 
 ### How It Works: [Link to Video](https://www.youtube.com/watch?v=e644HVGFAJY)
 
@@ -28,7 +28,7 @@
 3. Not Inplace
 4. Consumes more memory
 
-### Cycle Sort Applications
+### Applications
 
 1. There are smaller integers with multiple counts.
 2. Linear complexity is the need.
