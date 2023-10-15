@@ -31,7 +31,7 @@ It occurs when the elements of the array are in jumbled order (neither ascending
 4. Basic idea for Heap Sort
 5. Less memory writes compared to Bubble Sort
 
-### Selection Sort Applications
+### Applications
 1. It is used when a small list is to be sorted
 2. If cost of swapping does not matter
 3. If checking of all the elements is compulsory

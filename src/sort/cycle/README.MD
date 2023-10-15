@@ -18,7 +18,7 @@
 ### Space Complexity
 
 ---
-1. The space complexity is constant cause this algorithm is in place so it does not use any extra memory to sort.
+1. The space complexity is constant cause this algorithm is in-place, so it does not use any extra memory to sort.
 
 ### Properties
 1. Comparison Based
@@ -26,7 +26,7 @@
 3. Inplace
 4. Makes min memory writes as compare to all other sorting algorithms
 
-### Cycle Sort Applications
+### Applications
 1. This sorting algorithm is best suited for situations where memory write or swap operations are costly.
 2. Useful for complex problems.
 

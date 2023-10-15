@@ -30,6 +30,6 @@ It occurs when the elements of an array are in jumbled order (neither ascending 
 3. Inplace
 4. Used in practise for small arrays (TimSort & IntroSort)
 
-### Insertion Sort Applications
+### Applications
 1. The array has a small number of elements
 2. There are only a few elements left to be sorted
