@@ -5,6 +5,7 @@ import sort.bucket.BucketSort;
 import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
 import sort.insertion.InsertionSort;
+import sort.merge.MergeSort;
 import sort.radix.RadixSort;
 import sort.selection.SelectionSort;
 
@@ -35,6 +36,9 @@ public class SortingService {
                 break;
             case BUCKET_SORT:
                 BucketSort.sort(arr);
+                break;
+            case MERGE_SORT:
+                MergeSort.sort(arr);
                 break;
         }
     }
