@@ -6,3 +6,4 @@
 4. Cycle Sort
 5. Counting Sort
 6. Radix Sort
+7. Bucket Sort
