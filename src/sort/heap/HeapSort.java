@@ -1,9 +1,29 @@
 package sort.heap;
 
-public class HeapSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Heap Sort");
+import sort.Sortable;
 
+public class HeapSort implements Sortable {
+    private volatile static HeapSort instance;
+
+    private HeapSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static HeapSort getInstance() {
+        if (instance == null) {
+            synchronized (HeapSort.class) {
+                if (instance == null)
+                    instance = new HeapSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // step 1: build heap

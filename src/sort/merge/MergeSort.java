@@ -1,9 +1,29 @@
 package sort.merge;
 
-public class MergeSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Merge Sort");
+import sort.Sortable;
 
+public class MergeSort implements Sortable {
+    private volatile static MergeSort instance;
+
+    private MergeSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static MergeSort getInstance() {
+        if (instance == null) {
+            synchronized (MergeSort.class) {
+                if (instance == null)
+                    instance = new MergeSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
         int l = 0;
         int r = n - 1;
@@ -11,7 +31,7 @@ public class MergeSort {
         mergeSort(arr, l, r);
     }
 
-    private static void mergeSort(int[] arr, int l, int r) {
+    private void mergeSort(int[] arr, int l, int r) {
         // array should always contain 2 elements
         if (l < r) {
             // find middle index
@@ -26,7 +46,7 @@ public class MergeSort {
         }
     }
 
-    private static void merge(int[] arr, int l, int mid, int r) {
+    private void merge(int[] arr, int l, int mid, int r) {
         // find size of left & right half
         int leftSize = (mid - l) + 1;
         int rightSize = (r - mid) + 1;

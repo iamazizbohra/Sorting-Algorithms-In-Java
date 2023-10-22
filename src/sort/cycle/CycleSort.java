@@ -1,9 +1,29 @@
 package sort.cycle;
 
-public class CycleSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Cycle Sort");
+import sort.Sortable;
 
+public class CycleSort implements Sortable {
+    private volatile static CycleSort instance;
+
+    private CycleSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static CycleSort getInstance() {
+        if (instance == null) {
+            synchronized (CycleSort.class) {
+                if (instance == null)
+                    instance = new CycleSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // loop to start a cycle from each element

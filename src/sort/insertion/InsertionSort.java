@@ -1,9 +1,29 @@
 package sort.insertion;
 
-public class InsertionSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Insertion Sort");
+import sort.Sortable;
 
+public class InsertionSort implements Sortable {
+    private volatile static InsertionSort instance;
+
+    private InsertionSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static InsertionSort getInstance() {
+        if (instance == null) {
+            synchronized (InsertionSort.class) {
+                if (instance == null)
+                    instance = new InsertionSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // loop to select each element

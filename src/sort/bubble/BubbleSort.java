@@ -1,9 +1,29 @@
 package sort.bubble;
 
-public class BubbleSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Bubble Sort");
+import sort.Sortable;
 
+public class BubbleSort implements Sortable {
+    private volatile static BubbleSort instance;
+
+    private BubbleSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static BubbleSort getInstance() {
+        if (instance == null) {
+            synchronized (BubbleSort.class) {
+                if (instance == null)
+                    instance = new BubbleSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // loop for n-1 passes

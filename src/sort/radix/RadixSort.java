@@ -1,9 +1,29 @@
 package sort.radix;
 
-public class RadixSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Radix Sort");
+import sort.Sortable;
 
+public class RadixSort implements Sortable {
+    private volatile static RadixSort instance;
+
+    private RadixSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static RadixSort getInstance() {
+        if (instance == null) {
+            synchronized (RadixSort.class) {
+                if (instance == null)
+                    instance = new RadixSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // find max element in the array
@@ -21,7 +41,7 @@ public class RadixSort {
         }
     }
 
-    public static void countingSortLastDigit(int[] arr, int exp) {
+    public void countingSortLastDigit(int[] arr, int exp) {
         int n = arr.length;
 
         // create new count array of size 10,

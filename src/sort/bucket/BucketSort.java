@@ -1,12 +1,32 @@
 package sort.bucket;
 
+import sort.Sortable;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class BucketSort {
-    public static void sort(int[] arr) {
-        System.out.println("Sorting Elements Using Bucket Sort");
+public class BucketSort implements Sortable {
+    private volatile static BucketSort instance;
 
+    private BucketSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static BucketSort getInstance() {
+        if (instance == null) {
+            synchronized (BucketSort.class) {
+                if (instance == null)
+                    instance = new BucketSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int[] arr, int... varargs) {
         int n = arr.length;
 
         // find max element

@@ -1,9 +1,29 @@
 package sort.quick;
 
-public class QuickSort {
-    public static void sort(int arr[]) {
-        System.out.println("Sorting Elements Using Quick Sort");
+import sort.Sortable;
 
+public class QuickSort implements Sortable {
+    private volatile static QuickSort instance;
+
+    private QuickSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static QuickSort getInstance() {
+        if (instance == null) {
+            synchronized (QuickSort.class) {
+                if (instance == null)
+                    instance = new QuickSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int arr[], int... varargs) {
         int n = arr.length;
 
         int l = 0;
@@ -12,7 +32,7 @@ public class QuickSort {
         quickSort(arr, l, h);
     }
 
-    private static void quickSort(int arr[], int l, int h) {
+    private void quickSort(int arr[], int l, int h) {
         // there should be always two elements in the array
         if (l < h) {
             // partition array into two & return partition index
@@ -26,7 +46,7 @@ public class QuickSort {
         }
     }
 
-    private static int partition(int arr[], int l, int h) {
+    private int partition(int arr[], int l, int h) {
         // choose 1st element as pivot
         int pivotElement = arr[l];
         int i = l;

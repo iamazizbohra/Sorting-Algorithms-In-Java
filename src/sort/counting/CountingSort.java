@@ -1,9 +1,29 @@
 package sort.counting;
 
-public class CountingSort {
-    public static void sort(int arr[]) {
-        System.out.println("Sorting Elements Using Counting Sort");
+import sort.Sortable;
 
+public class CountingSort implements Sortable {
+    private volatile static CountingSort instance;
+
+    private CountingSort() {
+    }
+
+    /*
+     Singleton Design Pattern
+     */
+    public static CountingSort getInstance() {
+        if (instance == null) {
+            synchronized (CountingSort.class) {
+                if (instance == null)
+                    instance = new CountingSort();
+            }
+        }
+
+        return instance;
+    }
+
+    @Override
+    public void sort(int arr[], int... varargs) {
         int n = arr.length;
 
         // find max element
