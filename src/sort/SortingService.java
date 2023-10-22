@@ -4,6 +4,7 @@ import sort.bubble.BubbleSort;
 import sort.bucket.BucketSort;
 import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
+import sort.heap.HeapSort;
 import sort.insertion.InsertionSort;
 import sort.merge.MergeSort;
 import sort.quick.QuickSort;
@@ -43,6 +44,9 @@ public class SortingService {
                 break;
             case QUICK_SORT:
                 QuickSort.sort(arr);
+                break;
+            case HEAP_SORT:
+                HeapSort.sort(arr);
                 break;
         }
     }

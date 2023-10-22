@@ -9,5 +9,6 @@ public enum SortingAlgorithms {
     RADIX_SORT,
     BUCKET_SORT,
     MERGE_SORT,
-    QUICK_SORT
+    QUICK_SORT,
+    HEAP_SORT
 }
