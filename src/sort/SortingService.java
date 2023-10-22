@@ -6,6 +6,7 @@ import sort.counting.CountingSort;
 import sort.cycle.CycleSort;
 import sort.insertion.InsertionSort;
 import sort.merge.MergeSort;
+import sort.quick.QuickSort;
 import sort.radix.RadixSort;
 import sort.selection.SelectionSort;
 
@@ -39,6 +40,9 @@ public class SortingService {
                 break;
             case MERGE_SORT:
                 MergeSort.sort(arr);
+                break;
+            case QUICK_SORT:
+                QuickSort.sort(arr);
                 break;
         }
     }
