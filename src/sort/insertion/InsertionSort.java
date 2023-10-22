@@ -14,7 +14,7 @@ public class InsertionSort {
             // comparison starts from the left adjacent element of key till zero
             int j = i - 1;
 
-            // go backward until you find element > key
+            // go backward while you find element > key
             // stop as soon as you find element < key
             while (j >= 0 && arr[j] > key) {
                 // shift greater elements to the right
