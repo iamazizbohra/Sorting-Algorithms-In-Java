@@ -21,7 +21,7 @@ public class MergeSort {
             mergeSort(arr, l, mid); // first half
             mergeSort(arr, (mid + 1), r); // second half
 
-            // conquer: merger two sorted array
+            // conquer: merge two sorted array
             merge(arr, l, mid, r);
         }
     }
@@ -30,10 +30,10 @@ public class MergeSort {
         // find size of left & right half
         int leftSize = (mid - l) + 1;
         int rightSize = (r - mid) + 1;
-        int tempSize = (leftSize + rightSize) - 1;
+        int totalElements = (leftSize + rightSize) - 1;
 
-        // create temp array of total size
-        int[] temp = new int[tempSize];
+        // create temp array of total elements
+        int[] temp = new int[totalElements];
 
         // two pointers to keep track of elements of left & right array
         int i = l;
@@ -48,17 +48,19 @@ public class MergeSort {
 
             }
         }
+
         // if any elements are remaining in left half put them in temp array
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
+
         // if any elements are remaining in right half put them in temp array
         while (j <= r) {
             temp[k++] = arr[j++];
         }
 
         // copy elements from temp array back to original array
-        for (int s = 0; s < tempSize; s++) {
+        for (int s = 0; s < totalElements; s++) {
             arr[l++] = temp[s];
         }
     }
