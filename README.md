@@ -7,3 +7,6 @@
 5. Counting Sort
 6. Radix Sort
 7. Bucket Sort
+8. Merge Sort
+9. Quick Sort
+10. Heap Sort
