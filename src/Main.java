@@ -1,5 +1,6 @@
 import exception.ElementsNotFoundException;
 import exception.SortingAlgorithmNotFound;
+import sort.bucket.BucketSort;
 import sort.selection.SelectionSort;
 
 import java.util.Arrays;
@@ -15,8 +16,8 @@ public class Main {
         try {
             SortingService sortingService = new SortingService();
             sortingService.setElements(arr);
-            sortingService.setSortingAlgorithm(SelectionSort.getInstance());
-            sortingService.sort();
+            sortingService.setSortingAlgorithm(BucketSort.getInstance());
+            sortingService.sort(5);
         } catch (ElementsNotFoundException | SortingAlgorithmNotFound e) {
             System.out.println(e.getMessage());
             return;

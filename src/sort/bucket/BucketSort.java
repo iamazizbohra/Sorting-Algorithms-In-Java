@@ -38,10 +38,8 @@ public class BucketSort implements Sortable {
         // increment to compute right bucket index
         maxElement++;
 
-        // assume total buckets
-        int totalBuckets = 5;
-
         // create buckets
+        int totalBuckets = varargs[0];
         ArrayList<ArrayList<Integer>> buckets = new ArrayList<>(totalBuckets);
 
         // add ArrayList to each bucket to hold elements
