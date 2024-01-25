@@ -3,9 +3,9 @@
 
 ### How It Works:
 ![Selection Sort](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
-* Red is current min. 
-* Yellow is sorted list. 
-* Blue is current item.
+* Red is the current min. 
+* Yellow is the sorted list. 
+* Blue is the current item.
 
 
 ### Time Complexity
@@ -33,9 +33,9 @@ It occurs when the elements of the array are in jumbled order (neither ascending
 
 ### Applications
 1. It is used when a small list is to be sorted
-2. If cost of swapping does not matter
+2. If the cost of swapping does not matter
 3. If checking of all the elements is compulsory
-4. If cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n<sup>2</sup>) of bubble sort)
+4. If the cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n<sup>2</sup>) of bubble sort)
 
 ### Advantages
 1. Simple and easy to understand.
