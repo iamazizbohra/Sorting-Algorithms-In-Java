@@ -42,7 +42,7 @@ public class CountingSort implements Sortable {
             count[e]++;
         }
 
-        // count prefix sum of frequency array
+        // count prefix sum of frequency array to find the positions
         for (int i = 1; i <= k; i++) {
             count[i] = count[i - 1] + count[i];
         }
