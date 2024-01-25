@@ -55,7 +55,7 @@ public class RadixSort implements Sortable {
             count[lastDigit]++;
         }
 
-        // count prefix sum of frequency array
+        // count prefix sum of frequency array to find the positions
         for (int i = 1; i < 10; i++) {
             count[i] = count[i - 1] + count[i];
         }
