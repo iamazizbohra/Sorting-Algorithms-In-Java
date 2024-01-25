@@ -1,12 +1,13 @@
 # Sorting Algorithms In Java
 
-1. [Bubble Sort](https://github.com/iamazizbohra/Sorting-Algorithms-In-Java/tree/master/src/sort/bubble)
+1. [Bubble Sort](src/sort/bubble)
 2. [Selection Sort](src/sort/selection)
-3. Insertion Sort
-4. Cycle Sort
-5. Counting Sort
-6. Radix Sort
-7. Bucket Sort
-8. Merge Sort
-9. Quick Sort
-10. Heap Sort
+3. [Heap Sort](src/sort/heap)
+4. [Insertion Sort](src/sort/insertion)
+5. [Cycle Sort](src/sort/cycle)
+6. [Counting Sort](src/sort/counting)
+7. [Radix Sort](src/sort/radix)
+8. [Bucket Sort](src/sort/bucket)
+9. [Merge Sort](src/sort/merge)
+10. [Quick Sort](src/sort/quick)
+
