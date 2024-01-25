@@ -70,9 +70,8 @@ public class QuickSort implements Sortable {
         }
 
         // j is the final index of pivot so swap it with pivot
-        int temp = arr[l];
         arr[l] = arr[j];
-        arr[j] = temp;
+        arr[j] = pivotElement;
 
         // return index of pivot
         return j;
