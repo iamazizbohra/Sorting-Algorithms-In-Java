@@ -1,7 +1,7 @@
 # Sorting Algorithms In Java
 
-1. Bubble Sort
-2. Selection Sort
+1. [Bubble Sort](https://github.com/iamazizbohra/Sorting-Algorithms-In-Java/tree/master/src/sort/bubble)
+2. [Selection Sort](src/sort/selection)
 3. Insertion Sort
 4. Cycle Sort
 5. Counting Sort
