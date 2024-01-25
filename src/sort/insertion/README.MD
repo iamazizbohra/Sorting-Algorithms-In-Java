@@ -12,7 +12,7 @@ The partial sorted list (black) initially contains only the first element in the
 1. **Worst Case Complexity: O(n<sup>2</sup>)**
 Suppose, an array is in ascending order, and you want to sort it in descending order. In this case, worst case complexity occurs.
 Each element has to be compared with each of the other elements so, for every nth element, (n-1) number of comparisons are made.
-Thus, the total number of comparisons = n*(n-1) ~ n2
+Thus, the total number of comparisons = n*(n-1) ~ n<sup>2</sup>
 2. **Best Case Complexity: O(n)**
 When the array is already sorted, the outer loop runs for n number of times whereas the inner loop does not run at all. So, there are only n number of comparisons. Thus, complexity is linear.
 3. **Average Case Complexity: O(n<sup>2</sup>)**
