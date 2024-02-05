@@ -36,8 +36,8 @@ public class QuickSort implements Sortable {
         // there should be always two elements in the array
         if (l < h) {
             // partition array into two & return partition index
-            // elements in left partition are <= pivot &
-            // elements in right partition are > pivot
+            // elements in the left partition are <= pivot &
+            // elements in the right partition are > pivot
             int partitionIndex = partition(arr, l, h);
 
             // recursively call quickSort for left partition & right partition
@@ -52,16 +52,16 @@ public class QuickSort implements Sortable {
         int i = l;
         int j = h;
 
-        // partition around pivot element
+        // partition around a pivot element
         // accumulate elements <= pivot to left & greater elements to right
         while (i < j) {
-            // find 1st greater element that pivot from beginning
+            // find 1st greater element than pivot from the beginning
             while (i < h && arr[i] <= pivotElement) i++;
 
-            // find 1st small element that pivot from end
+            // find 1st small element than pivot from the end
             while (j > l && arr[j] > pivotElement) j--;
 
-            // if i & j are valid index then swap greater element with smaller
+            // if i & j are valid indexes then swap the greater element with a smaller element
             if (i < j) {
                 int temp = arr[i];
                 arr[i] = arr[j];
@@ -69,7 +69,7 @@ public class QuickSort implements Sortable {
             }
         }
 
-        // j is the final index of pivot so swap it with pivot
+        // j is the final index of the pivot so swap it with the pivot
         arr[l] = arr[j];
         arr[j] = pivotElement;
 
