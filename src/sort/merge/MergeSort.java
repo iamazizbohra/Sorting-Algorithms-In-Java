@@ -65,7 +65,6 @@ public class MergeSort implements Sortable {
                 temp[k++] = arr[i++];
             } else {
                 temp[k++] = arr[j++];
-
             }
         }
 
